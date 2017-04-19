@@ -2,7 +2,7 @@
 
 用原生js封装的表单注册验证插件，仿制了一下腾讯的样式，供参考学习
 
-![demo](https://RBG512.github.io/2048/demo2.png)
+![demo](https://RBG512.github.io/2048/demo1.png)
 
 [演示地址](https://RBG512.github.io/2048/zhu.html)
 
