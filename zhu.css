@@ -1,0 +1,35 @@
+*{padding:0;margin:0;}
+body{
+    background:url("./img/13.jpg");
+    text-align: center;
+}
+.title{
+    width:250px ;
+    text-align: center;
+    color: #75db31;
+    font-size: 80px;
+    font-family: Arial;
+    margin-left:550px ;
+    }
+.main{
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    /*border: 1px solid red;*/
+    margin-left:550px ;
+    color: purple;
+    font-size: 20px;
+}
+.main img{
+    text-align: center;
+    border-radius: 50%;
+  border: 1px solid red;
+}
+#div1{
+    width: 400px;
+    height: 40px;
+    /*border: 1px solid red;*/
+    position: absolute;
+    line-height: 40px;
+    background-color: aqua;
+}

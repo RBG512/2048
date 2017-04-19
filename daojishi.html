@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+</head>
+<body>
+<div id="time">
+    <span>00</span>
+
+</div>
+</body>
+<script>
+    var i=61;
+    function send(){
+        i--;
+        if(i==-1)
+            return null;
+        document.getElementById("time").innerHTML=i;
+        setTimeout("send();",1000);
+    }
+    send();
+</script>
+</html>

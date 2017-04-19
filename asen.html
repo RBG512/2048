@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My 2048</title>
+    <link rel="stylesheet" type="text/css" href="2048.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="jquery-1.11.0.js"></script>
+    <script src="jquery.js"></script>
+    <script src="2048.js"></script>
+    <script src="showanimation.js"></script>
+    <script src="support.js"></script>
+    <script src="wenben.js"></script>
+    <script>
+    $(function(){
+        function changeBG(){
+            var num=parseInt(Math.random()*26+1);
+            $("body").removeClass().addClass("bg"+num);
+        }
+        setInterval(changeBG,2000);
+    });
+</script>
+    <!--<style>-->
+        <!--embed{-->
+            <!--/*opacity: 0;*/-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+    <header>
+        <h1>2048</h1>
+         <div id="div22"><img src="img/28.jpg" ></div>
+        <a href="javascript:newgame()" id="newgamebutton">New Game</a>
+        <div id="dateTime"></div>
+        <!--<div id="time"></div>-->
+        <div class="wen1"></div>
+    </header>
+
+    <div id="grid-container">
+        <div class="grid-cell" id="grid-cell-0-0"></div>
+        <div class="grid-cell" id="grid-cell-0-1"></div>
+        <div class="grid-cell" id="grid-cell-0-2"></div>
+        <div class="grid-cell" id="grid-cell-0-3"></div>
+
+        <div class="grid-cell" id="grid-cell-1-0"></div>
+        <div class="grid-cell" id="grid-cell-1-1"></div>
+        <div class="grid-cell" id="grid-cell-1-2"></div>
+        <div class="grid-cell" id="grid-cell-1-3"></div>
+
+        <div class="grid-cell" id="grid-cell-2-0"></div>
+        <div class="grid-cell" id="grid-cell-2-1"></div>
+        <div class="grid-cell" id="grid-cell-2-2"></div>
+        <div class="grid-cell" id="grid-cell-2-3"></div>
+
+        <div class="grid-cell" id="grid-cell-3-0"></div>
+        <div class="grid-cell" id="grid-cell-3-1"></div>
+        <div class="grid-cell" id="grid-cell-3-2"></div>
+        <div class="grid-cell" id="grid-cell-3-3"></div>
+    </div>
+    <div id="gameover">
+        <h1>Game Over</h1>
+        <h2>！你输了！</h2>
+    </div>
+<embed src="马頔 - 南山南.mp3" hidden="true" autostart="true" loop="true" />
+</body>
+
+<script src="shijian.js"></script>
+<!--<script>-->
+    <!--var i=60;-->
+    <!--function send(){-->
+        <!--i&#45;&#45;;-->
+        <!--if(i==-1)-->
+            <!--return null;-->
+        <!--document.getElementById("time").innerHTML=i;-->
+        <!--setTimeout("send();",1000);-->
+    <!--}-->
+    <!--send();-->
+
+
+<!--\\</script>-->
+</html>

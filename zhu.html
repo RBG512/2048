@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="zhu.css"/>
+
+</head>
+<body>
+<h1 class="title">2048</h1>
+<marquee direction=left scrollamount=9 onmouseover="this.stop()" onmouseout="this.start()" > 欢迎进入2048！</marquee>
+<div class="main">
+    <marquee direction=left scrollamount=9 onmouseover="this.stop()" onmouseout="this.start()" > 开始游戏</marquee>
+    <a href="asen.html"><img src="./img/28.jpg"></a>
+
+</div>
+<div id="div1"class="div2">
+    <audio  src="天空之城 - 钢琴.mp3" controls="controls" />
+</div>
+
+<marquee behavior="SCROLL" direction="LEFT" bgcolor="#A349A4"  height="80" width="500" hspace="0" vspace="0"
+         loop="INFINITE" scrollamount="30" scrolldelay="500">游戏规则：
+    开始时棋盘内随机出现两个数字，出现的数字仅可能为2或4，
+    　　玩家可以选择上下左右四个方向，若棋盘内的数字出现位移或合并，视为有效移动，
+    　　玩家选择的方向上若有相同的数字则合并，每次有效移动可以同时合并，但不可以连续合并，
+    　　玩家选择的方向行或列前方有空格则出现位移
+    　　每有效移动一步，棋盘的空位(无数字处)随机出现一个数字(依然可能为2或4)
+    　　棋盘被数字填满，无法进行有效移动，判负，游戏结束
+    　　棋盘上出现2048，判胜，游戏结束</marquee>
+
+</body>
+<script src="jquery-3.1.1.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $(".div2").mousedown(function (e) {
+//        $(".div2").mousedown(function (e) {
+            var e = e ? e : window.event;
+            var cur_x = $(this).offset().left;
+            var cur_y = $(this).offset().top;
+            var cur_m_x = e.clientX;
+            var cur_m_y = e.clientY;
+            var div2 = this;
+            $(document).bind('mousemove',function (e) {
+                var e = e ? e : window.event;
+                console.log(e.clientX+":"+ e.clientY);
+                $(div2).css({
+                    left: e.clientX - cur_m_x + cur_x + "px",
+                    top: e.clientY - cur_m_y + cur_y + "px"
+                });
+            });
+        }).mouseup(function () {
+            $(document).unbind('mousemove');
+        });
+    });
+</script>
+</html>

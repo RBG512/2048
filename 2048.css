@@ -1,0 +1,123 @@
+body{
+    /*width: 1600px;*/
+    /*height: 1000px;*/
+    background:url("../img/6.jpg");
+}
+#div22{
+    margin-left: 0px;
+    padding: 0px;
+}
+header{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+}
+/*2048标题*/
+header h1{
+    font-family: Arial;
+    font-size: 60px;
+    font-weight: bold;
+}
+ /*开始游戏*/
+ #newgamebutton{
+    display: block;
+    margin: 00px auto;
+    width: 100px;
+    padding: 10px 10px;
+    background-color: #8f7a66;
+    font-family: Arial;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/*文本*/
+header .wen1{
+    width: 500px;
+    height: 50px;
+    color: red;
+}
+/*开始游戏按钮*/
+header #newgamebutton:hover{
+background-color: #9f8b77;
+}
+header p {
+    font-family: Arial;
+    font-size: 25px;
+    margin: 0 auto;
+}
+/*当前时间*/
+#dateTime{
+    width: 500px;
+    height: 60px;
+}
+#dateTime{
+font-size: 20px;
+color: springgreen;
+}
+/*十六宫格背景*/
+#grid-container{
+    width: 460px;
+    height: 460px;
+    padding: 20px;
+    margin: 10px auto;
+    /*background-color: red;*/
+    background:url("/img/36.jpg");background-size:100%;
+    opacity: 0.8;
+    border-radius: 10px;
+    position: relative;
+}
+/*数字背景*/
+.grid-cell{
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: purple;
+    background:url("/img/28.jpg");background-size:100%;
+    opacity: 0.8;
+    position: absolute;
+
+}
+/*数字*/
+.number-cell{
+    border-radius: 6px;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+}
+/*游戏结束*/
+#gameover {
+    width: auto;
+    height: auto;
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    /*z-index:9001;*/
+}
+#gameover h1{
+    font-family: Arial;
+    font-size: 90px;
+    font-weight: bold;
+    color: #ff6700;
+}
+#gameover h2{
+    font-family: Arial;
+    font-size: 90px;
+    font-weight: bold;
+    color: red;
+}
+/*倒计时*/
+#time{
+    border: 1px solid green;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+
+    background-color: #ee7700;
+}
